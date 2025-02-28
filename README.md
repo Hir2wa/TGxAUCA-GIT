@@ -1,6 +1,8 @@
-## ADAVANCED GIT EXERCISES 
+## ADAVANCED GIT EXERCISES
+
 ### Challeng1
-```bash 
+
+```bash
 Kubahos-iMac-2:Advanced-Git gymkubaho$  git add test1.md
 Kubahos-iMac-2:Advanced-Git gymkubaho$  git commit -m  "initial file"
 [main (root-commit) 47c0bb2] initial file
@@ -19,7 +21,7 @@ Kubahos-iMac-2:Advanced-Git gymkubaho$  git commit -m " create third  and  fourt
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git status
 On branch main
 nothing to commit, working tree clean
-Kubahos-iMac-2:Advanced-Git gymkubaho$  git log 
+Kubahos-iMac-2:Advanced-Git gymkubaho$  git log
 commit c2d09c8959524305cbadaf3a81bfb56fcc072ec9 (HEAD -> main)
 Author: Hir2wa <alainfabricehirwa@gmail.com>
 Date:   Fri Feb 28 12:30:49 2025 +0200
@@ -47,16 +49,17 @@ Kubahos-iMac-2:Advanced-Git gymkubaho$ git commit --amend -m "create third and f
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git status
 On branch main
 nothing to commit, working tree clean
-Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --online 
+Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --online
 fatal: unrecognized argument: --online
-Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --oneline 
+Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --oneline
 83bdcd3 (HEAD -> main) create third and fourth files(added test4.md)
 d348975 create another file
 47c0bb2 initial file
-Kubahos-iMac-2:Advanced-Git gymkubaho$ 
+Kubahos-iMac-2:Advanced-Git gymkubaho$
 ```
 
-####  Challenge 2
+#### Challenge 2
+
 ```bash
 Kubahos-iMac-2:Advanced-Git gymkubaho$  git rebase -i HEAD~2
 [detached HEAD 5788fdd] create Second file
@@ -64,10 +67,12 @@ Kubahos-iMac-2:Advanced-Git gymkubaho$  git rebase -i HEAD~2
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test2.md
 Successfully rebased and updated refs/heads/main.
-Kubahos-iMac-2:Advanced-Git gymkubaho$ 
+Kubahos-iMac-2:Advanced-Git gymkubaho$
 ```
+
 #### challenge 3
-```bash 
+
+```bash
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git rebase -i HEAD~2
 interactive rebase in progress; onto 327fb1c
 Last commands done (2 commands done):
@@ -76,12 +81,12 @@ Last commands done (2 commands done):
 No commands remaining.
 You are currently rebasing branch 'main' on '327fb1c'.
   (all conflicts fixed: run "git rebase --continue")
-  ```
+```
 
+#### challenge 4
 
-  #### challenge 4
-  ```bash 
-  Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --oneline
+```bash
+Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --oneline
 327fb1c (HEAD)  Added README.md file
 81dc92f create third and fourth files(added test4.md)
 5788fdd create Second file
@@ -91,14 +96,14 @@ Kubahos-iMac-2:Advanced-Git gymkubaho$ git reset --soft 5788fdd
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git restore --staged test4.md
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git commit -m "Create third file"
 [detached HEAD a3d3de5] Create third file
- 2 files changed, 69 insertions(+)
- create mode 100644 README.md
- create mode 100644 test3.md
+2 files changed, 69 insertions(+)
+create mode 100644 README.md
+create mode 100644 test3.md
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git add test4.md
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git commit -m "Create fourth file"
 [detached HEAD 448531c] Create fourth file
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 test4.md
+1 file changed, 0 insertions(+), 0 deletions(-)
+create mode 100644 test4.md
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git rebase --continue
 You must edit all merge conflicts and then
 mark them as resolved using git add
@@ -107,12 +112,13 @@ Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --oneline
 a3d3de5 Create third file
 5788fdd create Second file
 47c0bb2 initial file
-Kubahos-iMac-2:Advanced-Git gymkubaho$ 
+Kubahos-iMac-2:Advanced-Git gymkubaho$
 
 
 ```
 
 #### challenge 5
+
 ```bash
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git rebase -i HEAD~2
 [detached HEAD a871405] Create third and fourth files
@@ -128,7 +134,7 @@ a871405 (HEAD) Create third and fourth files
 47c0bb2 initial file
 ```
 
-####  challenge 6
+#### challenge 6
 
 ```bash
 Kubahos-iMac-2:Advanced-Git gymkubaho$ touch unwanted.txt
@@ -139,16 +145,17 @@ Kubahos-iMac-2:Advanced-Git gymkubaho$ git commit -m "unwanted commit "
  1 file changed, 1 insertion(+)
  create mode 100644 unwanted.txt
 
-Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --oneline 
+Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --oneline
 29b1154 (HEAD) unwanted commit
 a871405 Create third and fourth files
 5788fdd create Second file
 47c0bb2 initial file
 ```
 
-####  challenge 7
+#### challenge 7
+
 ```bash
-Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --oneline 
+Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --oneline
 29b1154 (HEAD) unwanted commit
 a871405 Create third and fourth files
 5788fdd create Second file
@@ -190,9 +197,11 @@ ac623f0 (HEAD -> main) Implemented test 5
 81dc92f create third and fourth files(added test4.md)
 5788fdd create Second file
 47c0bb2 initial file
-Kubahos-iMac-2:Advanced-Git gymkubaho$ 
+Kubahos-iMac-2:Advanced-Git gymkubaho$
 ```
+
 #### Challenge 9
+
 ```bash
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --graph --oneline --all
 * ac623f0 (HEAD -> main) Implemented test 5
@@ -205,14 +214,14 @@ Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --graph --oneline --all
 | * ee55f6b create Second file
 | * 7daa906 Create third and fourth files
 | | *   2daa42a (refs/stash) WIP on (no branch): a871405 Create third and fourth files
-| | |\  
+| | |\
 | | | * 8054459 index on (no branch): a871405 Create third and fourth files
-| | |/  
+| | |/
 | | * a871405 Create third and fourth files
-| |/  
-|/|   
+| |/
+|/|
 * | 5788fdd create Second file
-|/  
+|/
 * 47c0bb2 initial file
 Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --graph --oneline --decorate --all
 * ac623f0 (HEAD -> main) Implemented test 5
@@ -225,18 +234,20 @@ Kubahos-iMac-2:Advanced-Git gymkubaho$ git log --graph --oneline --decorate --al
 | * ee55f6b create Second file
 | * 7daa906 Create third and fourth files
 | | *   2daa42a (refs/stash) WIP on (no branch): a871405 Create third and fourth files
-| | |\  
+| | |\
 | | | * 8054459 index on (no branch): a871405 Create third and fourth files
-| | |/  
+| | |/
 | | * a871405 Create third and fourth files
-| |/  
-|/|   
+| |/
+|/|
 * | 5788fdd create Second file
-|/  
+|/
 * 47c0bb2 initial file
-Kubahos-iMac-2:Advanced-Git gymkubaho$ 
+Kubahos-iMac-2:Advanced-Git gymkubaho$
 ```
+
 #### Challenge 10
+
 Git's reflog (short for "reference log") is a powerful tool that allows you to track the history of branch references and HEAD (the pointer to the current commit). It records every change made to the tips of branches, whether you made a commit, switched branches, performed a rebase, or any other Git operation that moves the HEAD. Even operations that may seem to be destructive, like git reset, are recorded in the reflog.
 
 ```bash
@@ -263,4 +274,79 @@ a3d3de5 HEAD@{18}: commit: Create third file
 5788fdd HEAD@{19}: reset: moving to 5788fdd
 b7723be HEAD@{20}: commit: Create third file
 :
+```
+
+## Part2:
+
+#### challenge 1:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git branch ft/new-feature
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git branch
+  ft/new-feature
+* main
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git  switch   ft/new-feature
+Switched to branch 'ft/new-feature'
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git  switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
+```
+
+#### challenge 2:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> echo "Implemented core functionality for new feature" > feature.txt
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git add feature.txt
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>   git   commit  -m " added new file "
+[ft/new-feature 991d089]  added new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+```
+
+#### challenge 3:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>   git  switch main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> echo "This is the updated project readme." > readme.txt
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git add readme.txt
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>  git commit -m "added new file on main branch"
+[main 956d657] added new file on main branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.txt
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git log --oneline
+956d657 (HEAD -> main) added new file on main branch
+2ec3819 (origin/main, origin/HEAD) Done Part1: Advanced Git
+ac623f0 Implemented test 5
+4296568 .
+1b3fdef initial commit
+327fb1c  Added README.md file
+81dc92f create third and fourth files(added test4.md)
+5788fdd create Second file
+47c0bb2 initial file
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
+```
+
+#### challenge 4:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>  git remote -v
+origin  https://github.com/Hir2wa/TGxAUCA-GIT.git (fetch)
+origin  https://github.com/Hir2wa/TGxAUCA-GIT.git (push)
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
+```
+
+#### challenge 5:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git merge ft/new-feature
+>>
+Merge made by the 'ort' strategy.
+ feature.txt | Bin 0 -> 98 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
 ```
