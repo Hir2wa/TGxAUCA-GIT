@@ -349,4 +349,96 @@ Merge made by the 'ort' strategy.
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 feature.txt
 (base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
+
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git add .
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>   git commit -m "Merged from ft/new-feature"
+[main acfaf9b] Merged from ft/new-feature
+ 1 file changed, 122 insertions(+), 36 deletions(-)
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>  git push origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.94 KiB | 397.00 KiB/s, done.
+Total 11 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/Hir2wa/TGxAUCA-GIT.git
+   2ec3819..acfaf9b  main -> main
 ```
+
+#### challenge 5:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git  branch
+  ft/new-feature
+* main
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git branch -d ft/new-feature
+Deleted branch ft/new-feature (was 991d089).
+
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git branch
+* main
+```
+
+#### challenge 6: Creating a Branch from a Commit
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git log --oneline
+acfaf9b (HEAD -> main, origin/main, origin/HEAD) Merged from ft/new-feature
+cafc1c9 Merge branch 'ft/new-feature'
+956d657 added new file on main branch
+991d089  added new file
+2ec3819 Done Part1: Advanced Git
+ac623f0 Implemented test 5
+4296568 .
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git checkout -b ft/new-branch-from-commit 956d657
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git stash
+Saved working directory and index state WIP on main: acfaf9b Merged from ft/new-feature
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git checkout -b ft/new-branch-from-commit 956d657
+Switched to a new branch 'ft/new-branch-from-commit'
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git branch
+* ft/new-branch-from-commit
+  main
+```
+
+#### challenge 7:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git merge ft/new-branch-from-commit
+Already up to date.
+```
+
+#### challenge 8:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git switch   ft/new-branch-from-commit
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git  stash
+Saved working directory and index state WIP on main: acfaf9b Merged from ft/new-feature
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git switch   ft/new-branch-from-commit
+Switched to branch 'ft/new-branch-from-commit'
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git rebase main
+Successfully rebased and updated refs/heads/ft/new-branch-from-commit.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git merge ft/new-branch-from-commit
+Already up to date.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
+```
+
+####challenge 9:
