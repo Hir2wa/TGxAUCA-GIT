@@ -814,4 +814,18 @@ To https://github.com/Hir2wa/TGxAUCA-GIT.git
 ←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
 Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
 ```
-// Testing  for 10th challenge
+
+// Testing for 10th challenge
+
+#### challenge 10:
+
+```bash
+$ git pull origin main
+From https://github.com/Hir2wa/TGxAUCA-GIT
+ * branch            main       -> FETCH_HEAD
+Updating cb7e65d..5468996
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+```
