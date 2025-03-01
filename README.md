@@ -497,3 +497,9 @@ Everything up-to-date
 ```
 
 for pushing and resolving conflict i used texteditor that why i go to push and i see everything is updated
+
+## part3:
+
+#### challenge 2:
+
+This is a different update from main branch.
