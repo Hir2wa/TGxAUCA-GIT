@@ -440,5 +440,3 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 (base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
 ```
-
-####challenge 9:
