@@ -487,7 +487,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 (base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git pull origin main
 (base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git pull origin main
 From https://github.com/Hir2wa/TGxAUCA-GIT
- * branch            main       -> FETCH_HEAD
+ * branch            main      -> FETCH_HEAD
 Auto-merging README.md
 CONFLICT (content): Merge conflict in README.md
 Automatic merge failed; fix conflicts and then commit the result.
