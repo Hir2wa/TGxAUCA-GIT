@@ -497,3 +497,40 @@ Everything up-to-date
 ```
 
 for pushing and resolving conflict i used texteditor that why i go to push and i see everything is updated
+
+## part3:
+
+#### challenge 1:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git  stash
+Saved working directory and index state WIP on main: 62b6e28 Solved 10 challenges of Part2
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git stash  list
+stash@{0}: WIP on main: 62b6e28 Solved 10 challenges of Part2
+stash@{1}: WIP on main: acfaf9b Merged from ft/new-feature
+stash@{2}: WIP on main: acfaf9b Merged from ft/new-feature
+```
+
+#### challenge 2:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git stash apply
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+#### challenge 3:
+
+###### This is a new feature update from ft/conflict-branch.
