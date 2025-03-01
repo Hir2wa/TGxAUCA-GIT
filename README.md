@@ -535,8 +535,30 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ###### This is a new feature update from ft/conflict-branch.
 
-## part3:
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git checkout -b ft/conflict-branch
+Switched to a new branch 'ft/conflict-branch'
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git add README.md
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git commit -m "Updated README from ft/conflict-branch"
+[ft/conflict-branch 0305aeb] Updated README from ft/conflict-branch
+ 1 file changed, 37 insertions(+)
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git commit -m "Updated README from main branch"
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
 
-#### challenge 2:
+no changes added to commit (use "git add" and/or "git commit -a")
 
-This is a different update from main branch.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git merge ft/conflict-branch
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+```
