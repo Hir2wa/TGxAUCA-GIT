@@ -441,4 +441,28 @@ nothing to commit, working tree clean
 (base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
 ```
 
-####challenge 9:
+#### challenge 9:
+
+```bash
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git add README.md
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git commit -m  "updated README.md"
+[main c91fb2b] updated README.md
+ 1 file changed, 92 insertions(+)
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.10 KiB | 1.10 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Hir2wa/TGxAUCA-GIT.git
+   acfaf9b..c91fb2b  main -> main
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
+```
+
+#### challenge 10:
+
+```bash
+
+```
