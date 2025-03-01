@@ -500,6 +500,7 @@ for pushing and resolving conflict i used texteditor that why i go to push and i
 
 ## part3:
 
+<<<<<<< Updated upstream
 #### challenge 1:
 
 ```bash
@@ -567,92 +568,6 @@ $ git commit -m "resolved  conflicts "
 ←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
 Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
 ```
-
-#### challenge 4:
-
-```bash
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (ft/conflict-branch)
-$ git  commit -m "simulated  conflict"
-[ft/conflict-branch d9e8636] simulated  conflict
- 1 file changed, 536 deletions(-)
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (ft/conflict-branch)
-$ echo "Hello from conflict-branch" >> README.md
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (ft/conflict-branch)
-$ git add .
-warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (ft/conflict-branch)
-$ git commit -m "Updated README in conflict-branch"
-[ft/conflict-branch 91079d4] Updated README in conflict-branch
- 1 file changed, 1 insertion(+)
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (ft/conflict-branch)
-$ git switch main
-Switched to branch 'main'
-Your branch is ahead of 'origin/main' by 2 commits.
-  (use "git push" to publish your local commits)
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
-$ git merge conflict-branch
-merge: conflict-branch - not something we can merge
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
-$ git mergetool
-
-This message is displayed because 'merge.tool' is not configured.
-See 'git mergetool --tool-help' or 'git help config' for more details.
-'git mergetool' will now attempt to use one of the following tools:
-opendiff kdiff3 tkdiff xxdiff meld tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare smerge emerge vimdiff nvimdiff
-No files need merging
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
-$ git config --global merge.tool vscode
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
-$ git config --global mergetool.vscode.cmd "code --wait $MERGED"
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
-$ git stash apply
-Auto-merging README.md
-CONFLICT (content): Merge conflict in README.md
-On branch main
-Your branch is ahead of 'origin/main' by 2 commits.
-  (use "git push" to publish your local commits)
-
-Unmerged paths:
-  (use "git restore --staged <file>..." to unstage)
-  (use "git add <file>..." to mark resolution)
-        both modified:   README.md
-
-no changes added to commit (use "git add" and/or "git commit -a")
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
-$ git mergetool
-Merging:
-README.md
-
-Normal merge conflict for 'README.md':
-  {local}: modified file
-  {remote}: modified file
-node:internal/modules/cjs/loader:1235
-  throw err;
-  ^
-
-Error: Cannot find module 'C:\Users\Aime\anaconda3\Library\c\Users\Aime\AppData\Local\Programs\Microsoft VS Code\resources\app\out\cli.js'
-    at Module._resolveFilename (node:internal/modules/cjs/loader:1232:15)
-    at Module._load (node:internal/modules/cjs/loader:1058:27)
-    at c._load (node:electron/js2c/node_init:2:16955)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:188:12)
-    at node:internal/main/run_main_module:28:49 {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: []
-}
-
-Node.js v20.18.1
-README.md seems unchanged.
-Was the merge successful [y/n]? y
-←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
-Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
-```
+=======
+#### challenge 2:
+>>>>>>> Stashed changes
