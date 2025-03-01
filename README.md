@@ -560,5 +560,10 @@ CONFLICT (content): Merge conflict in README.md
 CONFLICT (content): Merge conflict in README.md
 Automatic merge failed; fix conflicts and then commit the result.
 
-
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git commit -m "resolved  conflicts "
+[main 0eaca6e] resolved  conflicts
+ 1 file changed, 25 insertions(+), 3 deletions(-)
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
 ```
