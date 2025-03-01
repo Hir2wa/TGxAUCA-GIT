@@ -648,11 +648,169 @@ Error: Cannot find module 'C:\Users\Aime\anaconda3\Library\c\Users\Aime\AppData\
     at node:internal/main/run_main_module:28:49 {
   code: 'MODULE_NOT_FOUND',
   requireStack: []
-}
+
 
 Node.js v20.18.1
 README.md seems unchanged.
 Was the merge successful [y/n]? y
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+```
+
+#### challenge 5:
+
+```bash
+$ git  log --oneline
+3f46298 (HEAD -> main) solved Challenge 4
+7e84267 updated README.md
+0eaca6e resolved  conflicts
+cc61017 (origin/main, origin/HEAD) Merge branch 'ft/conflict-branch'
+6ac9dba Updated README from main branch
+0305aeb Updated README from ft/conflict-branch
+62b6e28 Solved 10 challenges of Part2
+db82d94 Merge branch 'main' of https://github.com/Hir2wa/TGxAUCA-GIT
+136e5e4  Resolved conflict from  remote branch
+9c3359d  README.md
+c91fb2b updated README.md
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git checkout 62b6e28
+Note: switching to '62b6e28'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 62b6e28 Solved 10 challenges of Part2
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT ((62b6e28...))
+$ git commit -am "Experimenting in Detached HEAD"
+HEAD detached at 62b6e28
+nothing to commit, working tree clean
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT ((62b6e28...))
+$ git add README.md
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT ((62b6e28...))
+$ git commit -am "Experimenting in Detached HEAD"
+[detached HEAD 2a5fc68] Experimenting in Detached HEAD
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT ((2a5fc68...))
+$ git log --oneline --graph --decorate
+* 2a5fc68 (HEAD) Experimenting in Detached HEAD
+* 62b6e28 Solved 10 challenges of Part2
+*   db82d94 Merge branch 'main' of https://github.com/Hir2wa/TGxAUCA-GIT
+|\
+| * 9c3359d  README.md
+* | 136e5e4  Resolved conflict from  remote branch
+|/
+* c91fb2b updated README.md
+* acfaf9b (ft/new-branch-from-commit) Merged from ft/new-feature
+*   cafc1c9 Merge branch 'ft/new-feature'
+|\
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT ((2a5fc68...))
+$ git branch experiment-branch
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT ((2a5fc68...))
+$ git checkout main
+Previous HEAD position was 2a5fc68 Experimenting in Detached HEAD
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+
+```
+
+#### challenge 6:
+
+```bash
+//Accidently  deleted the codes  that why i provided  codes  only
+
+touch .gitignore
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git add .gitignore
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git commit -m "Added .gitignore to exclude temporary files"
+[main e2f5a3a] Added .gitignore to exclude temporary files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$
+```
+
+#### challenge 7:
+
+```bash
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git tag v1.0
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+$ git push origin v1.0
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 6.09 KiB | 891.00 KiB/s, done.
+Total 13 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), completed with 1 local object.
+To https://github.com/Hir2wa/TGxAUCA-GIT.git
+ * [new tag]         v1.0 -> v1.0
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+```
+
+#### challenge 8:
+
+```bash
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git tag v1.1
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git tag
+v1.0
+v1.1
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git tag -d v1.1
+Deleted tag 'v1.1' (was e2f5a3a)
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git tag
+v1.0
+←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
+```
+
+#### challenge 9:
+
+```bash
+Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
+$ git push --all origin
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 833 bytes | 277.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/Hir2wa/TGxAUCA-GIT.git
+   cc61017..e2f5a3a  main -> main
+ * [new branch]      experiment-branch -> experiment-branch
+ * [new branch]      ft/conflict-branch -> ft/conflict-branch
+ * [new branch]      ft/new-branch-from-commit -> ft/new-branch-from-commit
 ←]633;P;Cwd=C:/Users/Aime/anaconda3/Library/c/Users/Aime/Desktop/TGxAUCA-GIT(base)
 Aime@Aimeb MINGW64 ~/Desktop/TGxAUCA-GIT (main)
 ```
