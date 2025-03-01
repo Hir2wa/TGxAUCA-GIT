@@ -464,5 +464,36 @@ To https://github.com/Hir2wa/TGxAUCA-GIT.git
 #### challenge 10:
 
 ```bash
-
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git push origin main
+To https://github.com/Hir2wa/TGxAUCA-GIT.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Hir2wa/TGxAUCA-GIT.git'
+To https://github.com/Hir2wa/TGxAUCA-GIT.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Hir2wa/TGxAUCA-GIT.git'
+hint: Updates were rejected because the tip of your current branch is behind
+error: failed to push some refs to 'https://github.com/Hir2wa/TGxAUCA-GIT.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git pull origin main
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git pull origin main
+From https://github.com/Hir2wa/TGxAUCA-GIT
+ * branch            main       -> FETCH_HEAD
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT> git push  origin main
+Everything up-to-date
+(base) PS C:\Users\Aime\Desktop\TGxAUCA-GIT>
 ```
+
+for pushing and resolving conflict i used texteditor that why i go to push and i see everything is updated
